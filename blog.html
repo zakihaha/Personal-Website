@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muh Zaki Choiruddin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <a class="brand" href="#">Zaki Choiruddin</a>
+                <ul class="navbar-menu">
+                    <li class="menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portofolio.html">Portofolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero">
+        <div class="container">
+            <img class="profile" src="assets/img/zaki.png" alt="">
+
+            <h2 class="title">Full-Stack Developer</h2>
+            <h4 class="text-muted">Based in Klaten, INA</h4>
+        </div>
+    </div>
+
+    <div id="description">
+        <div class="container">
+            <h1 class="text-center mb-40">Writing and Presentation Test Week 2</h1>
+            <h4 class="gradient text-center">Blog</h4>
+
+            <div class="box-blog mt-120 mb-120">
+                <p class="mb-60">
+                    Muh Zaki Choiruddin <br>
+                    Backend Web Development Track | Skilvul Tech4Impact <br>
+                    Assalamu'alaikum Wr. Wb. Di markdown ini saya akan menjelaskan berbagai materi yang telah saya
+                    pelajari selama mengikuti kegiatan Kampus Merdeka Skilvul Tech4Impact pada track Backend Web
+                    Development.
+                </p>
+
+                <h5 class="mb-40">Function</h5>
+
+                <div class="mb-20">
+                    <h6 class="mb-10">Pengertian</h6>
+                    <p>Function adalah blok atau kumpulan kode dalam sebuah grup yang berfungsi untuk menyelesaikan
+                        suatu task. Function bersifat reusable, artinya dapat digunakan secara berulang sehingga tidak
+                        perlu menulis kode yang sama pada tempat yang berbeda (DRY - Don't Repeat Yourself).</p>
+                </div>
+
+                <div class="mb-40">
+                    <h6 class="mb-10">Syntax</h6>
+                    <p class="mb-10">Function di Javascript dapat dibuat dengan menulis kode berikut:</p>
+                    <p class="mb-10">
+                        function welcome() { <br>
+                        return "Hello! Good Morning." <br>
+                        }
+                    </p>
+                    <p class="mb-10">Atau dengan arrow function (ES6).</p>
+                    <p class="mb-10">
+                        const welcome = () => { <br>
+                        return "Hello! Good Morning." <br>
+                        }
+                    </p>
+                    <p class="mb-10">Sedangkan untuk memanggil function cukup tuliskan nama function tersebut diikuti
+                        dengan ().</p>
+                    <p class="mb-10">welcome()</p>
+                </div>
+
+                <h6 class="mb-40">Parameter dan Argumen</h6>
+
+                <div class="mb-60">
+                    <h6 class="mb-10">Pengertian</h6>
+                    <p class="mb-10">Parameter berfungsi agar sebuah function dapat menerima inputan data dari luar.
+                        Contohnya disaat membuat function penjumlahan 2 bilangan seperti berikut:</p>
+                    <p class="mb-10">
+                        function additional(a, b) { <br>
+                        return a+b <br>
+                        }
+                    </p>
+                    <p class="mb-10">Lalu ada argumen yakni nilai yang ingin digunakan dalam sebuah function. Jumlah
+                        argumen harus sama dengan jumlah parameternya.</p>
+                    <p class="mb-10">additional(10, 6)</p>
+                    <p class="mb-10">Kita dapat membuat sebuah default value pada parameter, contohnya:</p>
+                    <p class="mb-10">
+                        function welcome(name = "Zaki") { <br>
+                        return `Hello ${name}`! <br>
+                        }
+                    </p>
+                    <p class="mb-10">
+                        welcome() // output: Hello Zaki! <br>
+                        welcome("Meisha") // output: Hello Meisha!
+                    </p>
+                </div>
+
+                <h5 class="mb-40">Scope</h5>
+
+                <div class="mb-20">
+                    <h6 class="mb-10">Pengertian</h6>
+                    <p>
+                        Scope adalah konsep untuk menentukan apakah suatu variabel bisa diakses pada bagian tertentu
+                        atau tidak. Gambarannya seperti: Kita semua bisa melihat bintang-bintang dilangit karena bumi
+                        bersifat global. Namun jika kamu tinggal di Bandung, kamu tidak akan bisa melihat monas yang
+                        berada di jakarta. Monas bersifat local yaitu hanya berada di Jakarta.
+                    </p>
+                </div>
+
+                <div class="mb-20">
+                    <h6 class="mb-10">Global Scope</h6>
+                    <p class="mb-10">
+                        Global scope adalah suatu variabel dapat diakses dimanapun dalam suatu file. Agar menjadi Global
+                        Scope, suatu variabel harus dideklarasikan diluar blocks function.
+                    </p>
+                    <p class="mb-10">let text = "Hello everybody!"</p>
+                    <p class="mb-10">
+                        const greeting = () => { <br>
+                        return text // "Hello everybody!" <br>
+                        }
+                    </p>
+                    <p class="mb-10">return text // "Hello everybody!"</p>
+                </div>
+
+                <div class="mb-20">
+                    <h6 class="mb-10">Local Scope</h6>
+                    <p class="mb-10">
+                        Local scope adalah variabel yang dideklarasikan di dalam blocksfunction, conditional, dan
+                        looping. Sehingga variabel tersebut hanya dapat diakses di dalam blocks saja. Tidak bisa diakses
+                        diluar blocks.
+                    </p>
+                    <p class="mb-10">
+                        const greeting = () => { <br>
+                        let text = "Hello everybody!" <br>
+                        return text // "Hello everybody!"
+                        }
+                    </p>
+                    <p class="mb-10">
+                        greeting() // "Hello everybody!" <br>
+                        return text // Uncaught ReferenceError: text is not defined
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <h1 class="mb-80">Visit my workspace</h1>
+                <a href="https://github.com/zakihaha" target="_blank" rel="noopener noreferrer" class="btn">Github</a>
+            </div>
+
+            <hr>
+
+            <div class="col-6">
+                <p>Created with 🐬 Zaki Choiruddin</p>
+                <div class="footer-social">
+                    <a class="footer-list" href="https://www.instagram.com/zakich_/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                    <a class="footer-list" href="https://www.linkedin.com/in/muh-zaki-choiruddin/" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a>
+                    <a class="footer-list" href="https://github.com/zakihaha" target="_blank"
+                        rel="noopener noreferrer">Github</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
